@@ -6,6 +6,7 @@
 
 html, body {
   margin: 0 auto;
+  background-color: background-color;
 }
 
 button {
@@ -19,18 +20,12 @@ button:focus {
   outline: 0;
 }
 
-.email {
-  cursor: pointer;
+body {
+  background-image: linear-gradient(#EFEFF0, #D8E4F0);
 }
 
-.gradient {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background: -webkit-linear-gradient(#EFEFF0, #D8E4F0);
-  background: -o-linear-gradient(#EFEFF0, #D8E4F0);
-  background: -moz-linear-gradient(#EFEFF0, #D8E4F0);
-  background: linear-gradient(#EFEFF0, #D8E4F0);
+.email {
+  cursor: pointer;
 }
 
 .page-title {
