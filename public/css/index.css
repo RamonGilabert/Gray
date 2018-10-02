@@ -1,0 +1,36 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html, body {
+  margin: 0 auto;
+  background-color: background-color;
+}
+
+button {
+  text-decoration: none;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.email {
+  cursor: pointer;
+}
+
+.page-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  clip: rect(0, 1px, 1px, 0);
+}
+
+
