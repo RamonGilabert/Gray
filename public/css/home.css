@@ -9,7 +9,7 @@
   justify-content: space-between;
   min-height: 1000px;
   min-width: 1200px;
-  max-width: 1460px;
+  max-width: 1660px;
   height: 100vh;
   margin: 0 auto;
 }
@@ -40,35 +40,36 @@
 
 .explanation button {
   width: 208px;
-  height: 58px;
+  height: 60px;
   position: relative;
   display: block;
   margin-top: 32px;
-  border-radius: 18px;
+  border-radius: 16px;
   padding-bottom: 4px;
 }
 
 .images {
   position: relative;
   width: 30%;
-  height: 760px;
+  height: 900px;
   margin-right: 5.4%;
 }
 
 .images div {
-  width: 400px;
-  height: 900px;
+  margin-top: 40px;
+  width: 522px;
+  height: 1200px;
   position: absolute;
   float: right;
   right: 0;
-  background-size: 400px 632px;
+  background-size: 460px 727px;
   background-repeat: no-repeat;
   object-fit: cover;
 }
 
 .images .dark {
   background-image: url('../images/home/dark.png');
-  margin-top: 124px;
+  margin-top: 144px;
   z-index: 0;
 }
 
@@ -79,7 +80,7 @@
 .images .light {
   background-image: url('../images/home/light.png');
   z-index: 1;
-  right: 120px;
+  right: 140px;
 }
 
 .images .light.darken {

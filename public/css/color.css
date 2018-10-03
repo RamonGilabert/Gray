@@ -28,6 +28,7 @@ h2 span {
 
 h2 span.darken {
 	color: #9FA3A4;
+	color: #FCB827;
 }
 
 button {
@@ -42,7 +43,7 @@ button.darken {
 
 .gradient {
   /*background: linear-gradient(#EFEFF0, #D8E4F0);*/
-  background: #D8E4F0;
+  background: #E0E6ED;
 }
 
 .gradient.darken {

@@ -24,11 +24,15 @@ button:focus {
 }
 
 .gradient {
-  width: 100vw;
-  height: 100vh;
   position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: -1;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
 }
 
 .page-title {
@@ -75,8 +79,8 @@ nav a {
 
 .rectangles .top {
   position: absolute;
-  left: -232px;
-  top: -320px;
+  left: -180px;
+  top: -280px;
   width: 500px;
   height: 500px;
   opacity: 0.08;
@@ -86,8 +90,8 @@ nav a {
 
 .rectangles .bottom {
   position: absolute;
-  right: -232px;
-  bottom: -280px;
+  right: -120px;
+  bottom: -80px;
   width: 720px;
   height: 720px;
   opacity: 0.08;
