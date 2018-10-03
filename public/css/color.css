@@ -15,20 +15,19 @@ nav .download.darken {
 }
 
 h2 {
-	color: #2D2D2D;
+	color: #78848B;
 }
 
 h2.darken {
-	color: #F1F1F1;
+	color: #808080;
 }
 
 h2 span {
-	color: #6F7B7D;
+	color: #0E0D26;
 }
 
 h2 span.darken {
-	color: #9FA3A4;
-	color: #FCB827;
+	color: #FFFFFF;
 }
 
 button {
@@ -43,7 +42,7 @@ button.darken {
 
 .gradient {
   /*background: linear-gradient(#EFEFF0, #D8E4F0);*/
-  background: #E0E6ED;
+  background: #F3F3F3;
 }
 
 .gradient.darken {

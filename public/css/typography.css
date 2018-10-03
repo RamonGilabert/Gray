@@ -7,11 +7,11 @@ body {
 h2 {
   font-size: 40px;
   line-height: 48px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2 span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 nav a {
@@ -20,11 +20,12 @@ nav a {
 }
 
 button {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 button span {
-  font-size: 19px;
+  font-size: 20px;
 }
 
 .credits {

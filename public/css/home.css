@@ -39,12 +39,12 @@
 }
 
 .explanation button {
-  width: 208px;
-  height: 60px;
+  width: 224px;
+  height: 62px;
   position: relative;
   display: block;
   margin-top: 32px;
-  border-radius: 16px;
+  border-radius: 28px;
   padding-bottom: 4px;
 }
 
@@ -53,6 +53,7 @@
   width: 30%;
   height: 900px;
   margin-right: 1%;
+  margin-top: 50px;
 }
 
 .images div {
