@@ -22,6 +22,14 @@ function prepareDocument() {
   HTMLDocument.prototype.tag = function(name) {
     return this.tags(name)[0];
   }
+
+  HTMLDocument.prototype.selectors = function(name) {
+    return convert(this.querySelectorAll(name));
+  }
+
+  HTMLDocument.prototype.selector = function(name) {
+    return this.selectors(name)[0];
+  }
 }
 
 function toggle(element, name, remove) {
@@ -46,8 +54,8 @@ function encryptCorreu(id) {
     const email = emails[i];
 
     email.addEventListener('click', function() {
-      const letter = decode("znvygb:enzba@tvynoreg.qrfvta");
-      const subject = decode("Lb!");
+      const letter = decode("znvygb:pbagnpg@hfrtenl.pbz");
+      const subject = decode("V unir na vffhr jvgu Tenl");
       const reference = letter + '?subject=' + subject;
 
       window.location.href = reference;

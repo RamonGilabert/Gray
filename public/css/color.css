@@ -2,16 +2,32 @@ nav a {
   color: #6A6B6C;
 }
 
+nav a.darken {
+  color: #F1F1F1;
+}
+
 nav .download {
   color: #943D96;
+}
+
+nav .download.darken {
+  color: #FCB827;
 }
 
 h2 {
 	color: #2D2D2D;
 }
 
+h2.darken {
+	color: #F1F1F1;
+}
+
 h2 span {
 	color: #6F7B7D;
+}
+
+h2 span.darken {
+	color: #9FA3A4;
 }
 
 button {
@@ -19,22 +35,49 @@ button {
 	color: #FFFFFF;
 }
 
+button.darken {
+	background-color: #FCB827;
+	color: #FFFFFF;
+}
+
 .gradient {
-  background: linear-gradient(#EFEFF0, #D8E4F0);
+  /*background: linear-gradient(#EFEFF0, #D8E4F0);*/
+  background: #D8E4F0;
+}
+
+.gradient.darken {
+	/*background: linear-gradient(#1E2127, #0A0B0D);*/
+	background: #131417;
 }
 
 .credits p {
 	color: #6F7B7D;
 }
 
+.credits p.darken {
+	color: #F1F1F1;
+}
+
 .credits a {
 	color: #2D2D2D;
+}
+
+.credits a.darken {
+	color: #FCB827;
 }
 
 .rectangles .top {
 	background: #6C6D6F;
 }
 
+.rectangles .top.darken {
+	background: #D8E4F0;
+}
+
 .rectangles .bottom {
   background: #6C6D6F;
+}
+
+.rectangles .bottom.darken {
+  background: #D8E4F0;
 }

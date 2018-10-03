@@ -6,7 +6,7 @@ const displaying = '1.6s transform cubic-bezier(0.5, 0.15, 0.15, 1)';
 const leaving = '0.7s transform cubic-bezier(0.5, 0.15, 0.15, 1)';
 
 const load = new Load();
-const squircle = new Squircle();
+const color = new Color();
 
 document.addEventListener('DOMContentLoaded', function() {
   prepareDocument();
@@ -21,36 +21,50 @@ function Load() {
 
   this.prepare = function() {
     encryptCorreu('email');
-    squircle.calculate();
+    color.prepare();
   }
 }
 
-function Squircle() {
+function Color() {
 
-  this.calculate = function() {
-    const button = document.class('squircle');
-    const values = [];
+  this.prepare = function() {
+    self = this;
+    const logo = document.class('icon');
 
-    const squircle = radius => theta => ({
-      x: Math.pow(Math.abs(Math.cos(theta)), 2 / radius) * 50 * Math.sign(Math.cos(theta)) + 50,
-      y: Math.pow(Math.abs(Math.sin(theta)), 2 / radius) * 50 * Math.sign(Math.sin(theta)) + 50
-    });
+    const headline = document.tag('h2');
+    const gray = document.class('gray');
+    const download = document.class('download');
+    const now = document.class('download-now');
+    const gradient = document.class('gradient');
+    const top = document.selector('.rectangles .top');
+    const bottom = document.selector('.rectangles .bottom');
 
-    function radiants(degree) {
-      return degree * Math.PI / 180
+    const navigations = document.classes('link');
+    const credits = document.selectors('.credits p');
+    const links = document.selectors('.credits a');
+
+    const array = [].concat(navigations).concat(credits).concat(links)
+    .concat(headline).concat(gray).concat(download).concat(gradient)
+    .concat(top).concat(bottom).concat(now);
+
+    self.transition(array);
+
+    logo.addEventListener('click', function() {
+      self.theme(array);
+    }, false);
+  }
+
+  this.theme = function(array) {
+    for (var i = 0; i < array.length; i++) {
+      const element = array[i];
+      element.classList.toggle('darken');
     }
+  }
 
-    function clean(array) {
-      values.push(array.x + '%');
-      values.push(array.y + '%');
+  this.transition = function(array) {
+    for (var i = 0; i < array.length; i++) {
+      const element = array[i];
+      element.style.transition = 'all 0.2s ease';
     }
-
-    (new Array(360))
-    .fill(0)
-    .map((x, i) => i)
-    .map(radiants)
-    .map(squircle(16))
-    .map(({ x, y }) => ({ x: Math.round(x * 10)/10, y: Math.round(y * 10)/10 }))
-    .map(clean);
   }
 }
