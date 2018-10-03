@@ -1,27 +1,33 @@
 .page {
   position: relative;
-  min-height: 720px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  align-content: space-between;
   justify-content: space-between;
+  min-height: 920px;
+  min-width: 1200px;
+  max-width: 1500px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .middle {
+  width: 100%;
   display: flex;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-  width: 76%;
   margin: 0 auto;
-  padding-top: 120px;
 }
 
 .explanation {
   position: relative;
-  width: 648px;
+  max-width: 648px;
+  width: 70%;
+  margin-left: 8%;
 }
 
 .explanation img {
@@ -31,7 +37,7 @@
 }
 
 .explanation button {
-  width: 192px;
+  width: 208px;
   height: 60px;
   position: relative;
   display: block;
@@ -42,21 +48,24 @@
 
 .images {
   position: relative;
-  width: 50%;
+  width: 30%;
   height: 640px;
+  margin-right: 8%;
 }
 
 .images img {
   width: 340px;
   position: absolute;
+  float: right;
+  right: 0;
 }
 
 .images .dark {
-  top: 104px;
-  left: 100px;
+  margin-top: 104px;
   z-index: 0;
 }
 
 .images .light {
   z-index: 1;
+  right: 100px;
 }

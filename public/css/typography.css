@@ -5,13 +5,14 @@ body {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 38px;
+  line-height: 48px;
   font-weight: 600;
 }
 
 nav a {
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 button {
@@ -24,5 +25,5 @@ button span {
 
 .credits {
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
 }
