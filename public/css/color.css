@@ -1,0 +1,40 @@
+nav a {
+  color: #6A6B6C;
+}
+
+nav .download {
+  color: #943D96;
+}
+
+h2 {
+	color: #1B1B1B;
+}
+
+h2 span {
+	color: #6F7B7D;
+}
+
+button {
+	background-color: #943D96;
+	color: #FFFFFF;
+}
+
+.gradient {
+  background: linear-gradient(#EFEFF0, #D8E4F0);
+}
+
+.credits p {
+	color: #6F7B7D;
+}
+
+.credits a {
+	color: #1B1B1B;
+}
+
+.rectangles .top {
+	background: #6C6D6F;
+}
+
+.rectangles .bottom {
+  background: #6C6D6F;
+}

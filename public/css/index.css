@@ -27,10 +27,8 @@ button:focus {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background: -webkit-linear-gradient(#EFEFF0, #D8E4F0);
-  background: -o-linear-gradient(#EFEFF0, #D8E4F0);
-  background: -moz-linear-gradient(#EFEFF0, #D8E4F0);
-  background: linear-gradient(#EFEFF0, #D8E4F0);
+  top: 0;
+  z-index: -1;
 }
 
 .page-title {
@@ -40,4 +38,57 @@ button:focus {
   top: 0;
   left: 0;
   clip: rect(0, 1px, 1px, 0);
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 40px;
+  right: 64px;
+}
+
+nav a {
+  padding-left: 40px;
+}
+
+.credits {
+  margin-top: 40px;
+  margin-left: 12%;
+  padding-bottom: 40px;
+}
+
+.credits a {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0px;
+}
+
+.rectangles {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+}
+
+.rectangles .top {
+  position: absolute;
+  left: -232px;
+  top: -320px;
+  width: 500px;
+  height: 500px;
+  opacity: 0.1;
+  border-radius: 156px;
+  transform: rotate(-14deg);
+}
+
+.rectangles .bottom {
+  position: absolute;
+  right: -232px;
+  bottom: -280px;
+  width: 720px;
+  height: 720px;
+  opacity: 0.15;
+  border-radius: 248px;
+  transform: rotate(21deg);
 }

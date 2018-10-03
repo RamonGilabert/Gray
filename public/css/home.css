@@ -1,38 +1,62 @@
-*, html {
-  margin: 0;
-  padding: 0;
-  outline: 0;
+.page {
+  position: relative;
+  min-height: 720px;
 }
 
-html, body {
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  width: 76%;
   margin: 0 auto;
-  background-color: background-color;
+  padding-top: 120px;
 }
 
-button {
-  text-decoration: none;
-  border: 0px;
-  background-color: transparent;
+.explanation {
+  position: relative;
+  width: 648px;
+}
+
+.explanation img {
   cursor: pointer;
+  width: 80px;
+  margin-bottom: 16px;
 }
 
-button:focus {
-  outline: 0;
+.explanation button {
+  width: 192px;
+  height: 60px;
+  position: relative;
+  display: block;
+  margin-top: 32px;
+  border-radius: 20px;
+  padding-bottom: 4px;
 }
 
-body {
-  background-image: linear-gradient(#EFEFF0, #D8E4F0);
+.images {
+  position: relative;
+  width: 50%;
+  height: 640px;
 }
 
-.email {
-  cursor: pointer;
-}
-
-.page-title {
+.images img {
+  width: 340px;
   position: absolute;
-  width: 1px;
-  height: 1px;
-  top: 0;
-  left: 0;
-  clip: rect(0, 1px, 1px, 0);
+}
+
+.images .dark {
+  top: 104px;
+  left: 100px;
+  z-index: 0;
+}
+
+.images .light {
+  z-index: 1;
 }
