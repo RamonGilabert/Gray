@@ -40,12 +40,13 @@ function Color() {
     const bottom = document.selector('.rectangles .bottom');
 
     const navigations = document.classes('link');
+    const apps = document.classes('app');
     const credits = document.selectors('.credits p');
     const links = document.selectors('.credits a');
 
     const array = [].concat(navigations).concat(credits).concat(links)
     .concat(headline).concat(gray).concat(download).concat(gradient)
-    .concat(top).concat(bottom).concat(now);
+    .concat(top).concat(bottom).concat(now).concat(apps);
 
     self.transition(array);
 
