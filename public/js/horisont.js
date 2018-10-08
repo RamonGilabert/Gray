@@ -48,14 +48,14 @@ function setupAnalytics() {
   gtag('config', 'UA-126835989-1');
 }
 
-function encryptCorreu(id) {
+function message(id, correu, text) {
   const emails = document.classes(id);
   for (var i = 0; i < emails.length; i++) {
     const email = emails[i];
 
     email.addEventListener('click', function() {
-      const letter = decode("znvygb:pbagnpg@hfrtenl.pbz");
-      const subject = decode("V unir na vffhr jvgu Tenl");
+      const letter = decode(correu);
+      const subject = decode(text);
       const reference = letter + '?subject=' + subject;
 
       window.location.href = reference;
@@ -65,7 +65,7 @@ function encryptCorreu(id) {
 
 function decode(letters) {
   return letters.replace(/[a-zA-Z]/g, function(c) {
-    return String.fromCharCode((c <= "Z" ? 90 : 122)
+    return String.fromCharCode((c <= 'Z' ? 90 : 122)
     >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
   })
 }

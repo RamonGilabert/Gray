@@ -20,7 +20,9 @@ window.addEventListener('load', function() {
 function Load() {
 
   this.prepare = function() {
-    encryptCorreu('email');
+    message('email', 'znvygb:pbagnpg@hfrtenl.pbz', 'V unir na vffhr jvgu Tenl');
+    message('correu', 'znvygb:cerff@hfrtenl.pbz', 'Uryyb sebz gur cerff');
+    
     color.prepare();
   }
 }
@@ -65,6 +67,7 @@ function Color() {
   this.transition = function(array) {
     for (var i = 0; i < array.length; i++) {
       const element = array[i];
+      if (element === undefined) { return; }
       element.style.transition = 'all 0.2s ease';
     }
   }

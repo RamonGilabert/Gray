@@ -1,17 +1,16 @@
-.page {
-  position: relative;
-}
-
 .content {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   justify-content: space-between;
-  min-height: 1000px;
-  min-width: 1200px;
-  max-width: 1660px;
   height: 100vh;
   margin: 0 auto;
+}
+
+.logotype {
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
 }
 
 .middle {
@@ -28,7 +27,6 @@
   position: relative;
   max-width: 620px;
   width: 70%;
-  margin-left: 8%;
   margin-top: -4.5%;
 }
 
@@ -39,13 +37,9 @@
 }
 
 .explanation button {
-  width: 224px;
-  height: 62px;
   position: relative;
   display: block;
   margin-top: 32px;
-  border-radius: 28px;
-  padding-bottom: 4px;
 }
 
 .images {

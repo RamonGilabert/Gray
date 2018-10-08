@@ -7,11 +7,27 @@ nav a.darken {
 }
 
 nav .download {
-  color: #943D96;
+  color: #13171B;
 }
 
 nav .download.darken {
   color: #FCB827;
+}
+
+a:after {
+  background-color: #FAAA1F;
+}
+
+a.darken:after {
+  background-color: #FAAA1F;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a.darken:hover {
+  color: #F1F1F1;
 }
 
 h2 {
@@ -30,14 +46,48 @@ h2 span.darken {
 	color: #FFFFFF;
 }
 
-button {
-	background-color: #943D96;
-	color: #FFFFFF;
+h3 {
+	color: #2D2D2D;
 }
 
-button.darken {
-	background-color: #FCB827;
-	color: #FFFFFF;
+h3.darken {
+	color: #F1F1F1;
+}
+
+h4 {
+	color: #6F7B7D;
+}
+
+h4.darken {
+	color: #9FA3A4;
+}
+
+p {
+	color: #2D2D2D;
+}
+
+p.darken {
+	color: #F1F1F1;
+}
+
+.press a {
+	color: #6A6B6C;
+}
+
+.press a.darken {
+	color: #FFA700;
+}
+
+.press a:hover {
+	color: #000000;
+}
+
+.attribute a {
+	color: #2D2D2D;
+}
+
+.attribute a.darken {
+	color: #F1F1F1;
 }
 
 .gradient {
@@ -81,3 +131,30 @@ button.darken {
 .rectangles .bottom.darken {
   background: #D8E4F0;
 }
+
+button {
+	background-color: #13171B;
+	color: #FFFFFF;
+}
+
+button.darken {
+	background-color: #FCB827;
+	color: #FFFFFF;
+}
+
+button:hover {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+button.darken:hover {
+	background-color: #000000;
+	border-color: #000000;
+	color: #FFFFFF;
+}
+
+.download-kit {
+	background-color: #A1ACB0;
+}
+
+
