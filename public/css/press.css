@@ -25,6 +25,7 @@
 	max-width: 544px;
 	margin: 0 auto;
 	margin-top: 16vh;
+	position: relative;
 }
 
 h3 {
