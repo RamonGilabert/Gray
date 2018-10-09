@@ -104,7 +104,7 @@ h4 {
 
 @media only screen and (min-width: 1400px) {
 	.illustration img {
-		width: 100%;
+		width: 90%;
 		margin-left: -4%;
 		margin-top: -8%;
 	}
@@ -112,7 +112,7 @@ h4 {
 
 @media only screen and (min-width: 1000px) {
 	.illustration img {
-		width: 90%;
+		width: 85%;
 		margin-left: -4%;
 		margin-top: -4%;
 	}
@@ -154,8 +154,8 @@ h4 {
 	}
 }
 
-@media only screen and (min-width: 1460px) {
+@media only screen and (min-width: 1540px) {
 	.illustration img {
-		margin-left: 6%;
+		margin-left: 10%;
 	}
 }
