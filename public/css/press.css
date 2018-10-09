@@ -127,7 +127,7 @@ h4 {
 	}
 
 	.right {
-		width: 100%;
+		width: 70%;
 	}
 }
 
@@ -144,7 +144,8 @@ h4 {
 	}
 
 	.right {
-		width: 70%;
+		/*width: 70%;*/
+		width: 55%;
 	}
 }
 
@@ -159,6 +160,27 @@ h4 {
 		width: 120%;
 		margin-left: -32%;
 	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.illustration img {
+		margin-top: -4%;
+		margin-left: 8%;
+	}
+
+	.illustration .eye {
+		width: 90%;
+		margin-left: -2%;
+	}
+
+	.right {
+		width: 50%;
+	}
+
+	/*.illustration .eye {
+		height: 90%;
+		left: -2%;
+	}*/
 }
 
 @media only screen and (max-width: 900px) {
@@ -196,25 +218,4 @@ h4 {
 	nav a {
 		margin-right: 12px;
 	}
-}
-
-@media only screen and (min-width: 1560px) {
-	.illustration img {
-		margin-top: -4%;
-		margin-left: 8%;
-	}
-
-	.illustration .eye {
-		width: 90%;
-		margin-left: -4%;
-	}
-
-	.right {
-		width: 55%;
-	}
-
-	/*.illustration .eye {
-		height: 90%;
-		left: -2%;
-	}*/
 }
