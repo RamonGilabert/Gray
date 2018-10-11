@@ -31,11 +31,17 @@
 	position: relative;
 }
 
+.second {
+	margin-top: 24px;
+}
+
 h3 {
+	display: none;
 	margin-bottom: 8px;
 }
 
 h4 {
+	display: none;
 	margin-top: 44px;
 	margin-bottom: 2px;
 }
