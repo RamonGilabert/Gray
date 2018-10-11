@@ -17,12 +17,14 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	order: 1;
 }
 
 .left {
 	position: relative;
 	height: 100%;
 	width: 50%;
+	order: 2;
 }
 
 .press {
@@ -95,24 +97,20 @@ nav a {
 
 @media only screen and (max-height: 700px), screen and (max-width: 500px) {
 	.content {
-		height: auto;
+		height: 100%;
 	}
+
 	.right {
-		margin-bottom: 30vh;
 	}
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
 	.content {
 		flex-direction: column;
 	}
 
 	nav {
-		justify-content: space-between;
-	}
-
-	nav a {
-		margin-left: 0;
+		justify-content: flex-end;
 	}
 
 	.right {
@@ -130,6 +128,14 @@ nav a {
 	.press {
 		max-width: 640px;
 	}
+
+	nav {
+		justify-content: space-between;
+	}
+
+	nav a {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -142,7 +148,6 @@ nav a {
 	}
 
 	.content {
-		box-sizing: border-box;
   	padding: 32px;
 	}
 
@@ -159,5 +164,29 @@ nav a {
 @media only screen and (max-width: 450px) {
 	.selected {
 		display: none;
+	}
+
+	.content {
+  	/*padding: 16px 24px;*/
+  	padding: 24px;
+	}
+
+	.button {
+		margin-top: 120px;
+	}
+
+	.content {
+		height: auto;
+		justify-content: flex-start;
+	}
+
+	.right {
+		order: 2;
+		margin-bottom: 30vh;
+	}
+
+	.left {
+		order: 1;
+		margin-bottom: 18vh;
 	}
 }
