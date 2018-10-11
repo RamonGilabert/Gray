@@ -15,11 +15,11 @@ nav .download.darken {
 }
 
 a:after {
-  background-color: #FAAA1F;
+  background-color: #F8F8F8;
 }
 
 a.darken:after {
-  background-color: #FAAA1F;
+  background-color: #F8F8F8;
 }
 
 a:hover {
@@ -27,7 +27,11 @@ a:hover {
 }
 
 a.darken:hover {
-  color: #F1F1F1;
+  color: #000000;
+}
+
+nav .selected:hover {
+  color: #FFFFFF;
 }
 
 h2 {
@@ -59,7 +63,7 @@ h4 {
 }
 
 h4.darken {
-	color: #9FA3A4;
+	color: #CDD0D7;
 }
 
 p {
@@ -67,18 +71,32 @@ p {
 }
 
 p.darken {
-	color: #F1F1F1;
+	color: #F8F8F8;
 }
 
-.press a {
-	color: #6A6B6C;
+.running.darken {
+	color: #F8F8F8;
+	border-bottom: 2px solid #F8F8F8;
 }
 
-.press a.darken {
-	color: #FFA700;
+.running:hover {
+	color: #F8F8F8;
 }
 
-.press a:hover {
+.running:darken:hover {
+	color: #000000;
+}
+
+.kit.darken {
+	color: #F8F8F8;
+	border-bottom: 0px solid #F8F8F8;
+}
+
+.kit:hover {
+	color: #F8F8F8;
+}
+
+.kit.darken:hover {
 	color: #000000;
 }
 
@@ -90,14 +108,14 @@ p.darken {
 	color: #F1F1F1;
 }
 
-.gradient {
-  background: linear-gradient(#EFEFF0, #D8E4F0);
-  /*background: #F3F3F3;*/
+.content {
+  /*background: linear-gradient(#EFEFF0, #D8E4F0);*/
+  background: #141414;
 }
 
-.gradient.darken {
+.content.darken {
 	/*background: linear-gradient(#1E2127, #0A0B0D);*/
-	background: #131417;
+	background: #010101;
 }
 
 .credits p {
@@ -132,29 +150,22 @@ p.darken {
   background: #D8E4F0;
 }
 
+.kit {
+	color: #FFFFFF;
+}
+
 button {
-	background-color: #13171B;
 	color: #FFFFFF;
 }
 
 button.darken {
-	background-color: #FCB827;
 	color: #FFFFFF;
 }
 
 button:hover {
-	background-color: #000000;
 	color: #FFFFFF;
 }
 
 button.darken:hover {
-	background-color: #000000;
-	border-color: #000000;
 	color: #FFFFFF;
 }
-
-.download-kit {
-	background-color: #A1ACB0;
-}
-
-
