@@ -63,7 +63,7 @@ nav a {
 }
 
 .button {
-	margin-top: 56px;
+	margin-top: 44px;
 	height: 44px;
 	overflow: hidden;
 }
@@ -74,7 +74,7 @@ nav a {
 	width: auto;
 	border: 0;
 	position: relative;
-	bottom: 3px;
+	bottom: 4px;
 }
 
 .arrow {
@@ -90,7 +90,7 @@ nav a {
 
 .arrow img {
 	margin-top: 14px;
-	width: 18px;
+	width: 17px;
 }
 
 @media only screen and (max-height: 700px), screen and (max-width: 500px) {

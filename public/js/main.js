@@ -34,7 +34,7 @@ function Hover() {
   this.prepare = function() {
     const download = document.class('kit');
     const arrow = document.class('arrow');
-    const hovered = '-1px';
+    const hovered = '2px';
     const initial = '37px';
 
     arrow.style.bottom = initial;
