@@ -6,6 +6,11 @@
 
 html, body {
   margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
 
 button {
@@ -30,17 +35,10 @@ button a:after {
   display: none;
 }
 
-.page {
-  position: relative;
-}
-
 .content {
   height: 100vh;
   min-height: 800px;
   margin: 0 auto;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000;
 }
 
 .email {
