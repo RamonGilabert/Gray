@@ -1,3 +1,15 @@
+nav {
+  /*background: red;*/
+}
+
+.icon {
+  display: none;
+}
+
+.gray {
+  opacity: 1;
+}
+
 .images {
   position: relative;
   width: 30%;
