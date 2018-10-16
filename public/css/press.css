@@ -1,3 +1,7 @@
+body {
+	background: #040404;
+}
+
 .content {
 	position: relative;
 	display: flex;
