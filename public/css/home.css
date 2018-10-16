@@ -1,47 +1,3 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: space-between;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.logotype {
-  opacity: 0;
-  cursor: default;
-  pointer-events: none;
-}
-
-.middle {
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-.explanation {
-  position: relative;
-  max-width: 620px;
-  width: 70%;
-  margin-top: -4.5%;
-}
-
-.explanation img {
-  cursor: pointer;
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-.explanation button {
-  position: relative;
-  display: block;
-  margin-top: 32px;
-}
-
 .images {
   position: relative;
   width: 30%;
@@ -67,16 +23,8 @@
   z-index: 0;
 }
 
-.images .dark.darken {
-  background-image: url('../images/home/light.png');
-}
-
 .images .light {
   background-image: url('../images/home/light.png');
   z-index: 1;
   right: 140px;
-}
-
-.images .light.darken {
-  background-image: url('../images/home/dark.png');
 }

@@ -11,6 +11,55 @@ html, body {
 
 body {
   min-height: 100%;
+  background: #040404;
+}
+
+nav {
+  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+nav a {
+  margin-left: 56px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  box-sizing: border-box;
+  padding: 38px 48px 42px 48px;
+  margin: 0 auto;
+}
+
+.right {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 1;
+}
+
+.left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  order: 2;
+}
+
+.paragraph {
+  width: 100%;
+  max-width: 780px;
+  position: relative;
 }
 
 button {
@@ -35,24 +84,43 @@ button a:after {
   display: none;
 }
 
-.content {
-  height: 100vh;
-  min-height: 700px;
-  margin: 0 auto;
+.buttons a:after {
+  display: none;
+}
+
+.button {
+  margin-top: 48px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.kit {
+  display: inline-block;
+  transition: color 0.3s ease;
+  width: auto;
+  border: 0;
+  position: relative;
+  bottom: 3.5px;
+}
+
+.arrow {
+  margin-left: 6px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  transition: bottom 0.3s ease;
+}
+
+.arrow img {
+  margin-top: 14px;
+  width: 17px;
 }
 
 .email {
   cursor: pointer;
-}
-
-.gradient {
-  position: fixed;
-  z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000;
 }
 
 .page-title {
@@ -114,42 +182,79 @@ a:hover:after {
   transition: all .3s ease;
 }
 
-.credits {
-  margin-top: 40px;
-  padding-bottom: 40px;
+@media only screen and (max-height: 700px), screen and (max-width: 500px) {
+  .content {
+    height: 100%;
+  }
 }
 
-.credits a {
-  cursor: pointer;
-  text-decoration: none;
-  border: 0px;
+@media only screen and (max-width: 1600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  .right {
+    width: 100%;
+    height: 80%;
+  }
+
+  .left {
+    width: 100%;
+    height: 20%;
+  }
 }
 
-.rectangles {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: -1;
+@media only screen and (max-width: 1000px) {
+  .press {
+    max-width: 640px;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
 }
 
-.rectangles .top {
-  position: absolute;
-  left: -16vw;
-  top: -10vw;
-  width: 30vw;
-  height: 30vw;
-  opacity: 0.08;
-  border-radius: 11vw;
-  transform: rotate(-14deg);
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 24px 32px 28px 32px;
+  }
+
+  .download {
+    display: none;
+    margin-right: 0px;
+  }
 }
 
-.rectangles .bottom {
-  position: absolute;
-  right: -6vw;
-  bottom: -8vw;
-  width: 40vw;
-  height: 40vw;
-  opacity: 0.08;
-  border-radius: 16vw;
-  transform: rotate(21deg);
+@media only screen and (max-width: 450px) {
+  .right {
+    order: 2;
+    margin-bottom: 30vh;
+  }
+
+  .left {
+    order: 1;
+    margin-bottom: 18vh;
+  }
+
+  .button {
+    margin-top: 120px;
+  }
+
+  .content {
+    height: auto;
+    padding: 20px 24px;
+    justify-content: flex-start;
+  }
+
+  .selected {
+    display: none;
+  }
 }

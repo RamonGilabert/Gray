@@ -1,42 +1,3 @@
-body {
-	background: #040404;
-}
-
-.content {
-	position: relative;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-  padding: 38px 48px 42px 48px;
-}
-
-.right {
-	height: 100%;
-	width: 50%;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	order: 1;
-}
-
-.left {
-	position: relative;
-	height: 100%;
-	width: 50%;
-	order: 2;
-}
-
-.press {
-	width: 100%;
-	max-width: 780px;
-	position: relative;
-}
-
 .second {
 	margin-top: 24px;
 }
@@ -53,95 +14,6 @@ h4 {
 	margin-bottom: 2px;
 }
 
-.buttons a:after {
-	display: none;
-}
-
-nav {
-	height: 100%;
-	justify-content: flex-end;
-	align-items: flex-end;
-  flex-grow: 1;
-}
-
-nav a {
-	margin-left: 56px;
-}
-
-.button {
-	margin-top: 48px;
-	height: 44px;
-	overflow: hidden;
-}
-
-.kit {
-	display: inline-block;
-	transition: color 0.3s ease;
-	width: auto;
-	border: 0;
-	position: relative;
-	bottom: 3.5px;
-}
-
-.arrow {
-	margin-left: 6px;
-	display: inline-flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	position: relative;
-	transition: bottom 0.3s ease;
-}
-
-.arrow img {
-	margin-top: 14px;
-	width: 17px;
-}
-
-@media only screen and (max-height: 700px), screen and (max-width: 500px) {
-	.content {
-		height: 100%;
-	}
-
-	.right {
-	}
-}
-
-@media only screen and (max-width: 1600px) {
-	.content {
-		flex-direction: column;
-	}
-
-	nav {
-		justify-content: flex-end;
-	}
-
-	.right {
-		width: 100%;
-		height: 80%;
-	}
-
-	.left {
-		width: 100%;
-		height: 20%;
-	}
-}
-
-@media only screen and (max-width: 1000px) {
-	.press {
-		max-width: 640px;
-	}
-
-	nav {
-		justify-content: space-between;
-	}
-
-	nav a {
-		margin-left: 0;
-	}
-}
-
 @media only screen and (max-width: 600px) {
 	h3 {
 		margin-bottom: 4px;
@@ -151,46 +23,7 @@ nav a {
 		margin-bottom: 2px;
 	}
 
-	.content {
-  	padding: 24px 32px 28px 32px;
-	}
-
 	.selected {
 		margin-right: 0;
-	}
-
-	.download {
-		display: none;
-		margin-right: 0px;
-	}
-}
-
-@media only screen and (max-width: 450px) {
-	.selected {
-		display: none;
-	}
-
-	.content {
-  	/*padding: 16px 24px;*/
-  	padding: 20px 24px;
-	}
-
-	.button {
-		margin-top: 120px;
-	}
-
-	.content {
-		height: auto;
-		justify-content: flex-start;
-	}
-
-	.right {
-		order: 2;
-		margin-bottom: 30vh;
-	}
-
-	.left {
-		order: 1;
-		margin-bottom: 18vh;
 	}
 }
